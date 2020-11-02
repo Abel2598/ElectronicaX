@@ -1,0 +1,465 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;  
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*HEADER*/
+
+header{
+    padding: 10px 0;
+    color: #f05454;
+}
+
+header .logo{
+    cursor: pointer;
+    text-align: center;
+    min-width: 210px;
+}
+
+header .logo p {
+    font-weight: 300;
+}
+
+header form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header .barra-busqueda{
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    background: #ffffff;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #d8e2ef;
+    font-size: 16px;
+    outline-color: #f05454;
+}
+
+.cart i{
+    font-size: 30px;
+    padding: 5px 0;
+}
+
+.contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .categorias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+header .categorias button{
+    color: #000000;
+    margin: 0px 10px;
+    font-size: 12px;
+    padding: 2px 5px;
+    border: 1px solid #d8e2ef;
+    outline: none;
+    border-radius: 5PX;
+    cursor: pointer;
+}
+
+header .categorias button:hover{
+    background: #f05454;
+    color: #fff;
+    outline-style: none;
+    border: 3px solid #d8e2ef;
+}
+
+header .categorias button.activo   {
+    color: #ffffff;
+    background: #f05454;
+    border: 3px solid #d8e2ef;
+    font-weight: 500;
+}
+
+.icon{
+    display: none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+
+
+/* GRID */
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s linear 0.3s;
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido{
+    position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.grid .item p{
+    text-align: center;
+}
+
+.grid .item .especificaciones{
+    display: none;
+}
+
+  /*OVERLAY*/
+
+  .overlay{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .overlay .contenedor-img {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 5px;
+      align-items: center;
+  }
+
+  .overlay.activo{
+      display: flex;
+  }
+
+.overlay .agregar{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+.overlay #btn-agregar{
+    padding: 10px;
+    color: #ffff;
+    background: #f05454;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 90%;
+}
+
+.contenedor-img{
+    position: relative;
+}
+
+.overlay #btn-cerrar{
+    background: none;
+    font-size: 25px;
+    color: #f05454;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 5px ;
+}
+
+.overlay .modificador{
+    padding: 5px 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.overlay .modificador p{
+    width: 45%;
+    text-align: center;
+}
+.overlay select{
+    width: 55%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.overlay input{
+    width: 55%;
+    outline: none;
+    text-align: center;
+}
+
+.overlay .caracteristicas{
+    padding: 10px 20px;
+    
+}
+
+.img-nombre{
+    text-align: center;
+}
+
+.img-nombre .item-contenido{
+    margin-bottom: 25px;
+}
+
+.img-nombre .especificaciones{
+    text-align: left;
+}
+
+.img-nombre .especificaciones .info{
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.img-nombre .especificaciones ul{    
+    padding: 1px 50px;
+}
+
+.img-nombre img{
+    width: 60%;
+}
+
+/*OVERLAY DUDAS*/
+.overlay-dudas{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-dudas .contenedor-dudas {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 70%;
+}
+
+
+.contenedor-dudas{
+    position: relative;
+}
+
+.overlay-dudas.activo{
+    display: flex;
+}
+
+.overlay-dudas #btn-cerrar-dudas{
+    background: none;
+    font-size: 25px;
+    color: #f05454;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 5px ;
+}
+
+.overlay-dudas .dudas{
+padding: 15px 20px;
+text-align: justify;
+}
+
+/*FOOTER*/
+.footer{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    
+}
+
+.footer .contenedor-footer{
+    display: flex;
+    flex-direction: column;  
+    padding: 50px 20px;
+    align-items: flex-end;
+}
+
+.footer .footer-dudas{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;    
+}
+
+.footer #footer-dudas{
+    display: none;
+}
+
+.footer #footer-dudas.activo{
+    display: flex;
+}
+
+.footer #footer-whatsapp{
+    display: none;
+}
+
+.footer #footer-whatsapp.activo{
+    display: flex;
+}
+
+.footer .footer-whatsapp{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    
+}
+
+.footer #btn-dudas{
+    cursor: pointer;
+    font-size: 50px;
+    color: #f05454;
+    margin-left: 10px;
+}
+
+.footer #btn-whatsapp{
+    cursor: pointer;
+    font-size: 50px;
+    color: #25d366;
+    margin-left: 10px;
+}
+
+/*RESPONSIVO*/
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+    }
+    
+    header {
+        font-size: 10px;
+    }
+
+    header .logo {
+        min-width: 130px;
+    }
+
+    header .logo p{
+        font-weight: 500;
+    }
+
+    header .categorias button{
+        font-size: 10px;
+        padding: 0 5px;
+        margin-bottom: 5px;
+    }
+
+    header .barra-busqueda{
+        height: 25px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .cart img{
+        height: 25px;
+    }
+
+    .grid .item p{
+        font-size: 12px;
+    }
+
+    .overlay .contenedor-img{
+        max-width: 70%;
+    }
+
+    .overlay .img-nombre{
+        font-size: 12px;
+    }
+
+    .overlay .modificador{
+        font-size: 12px;
+    }
+
+    .modificador select{
+        font-size: 12px;
+    }
+
+    .modificador input{
+        font-size: 12px;
+    }
+
+    .overlay #btn-agregar{
+        font-size: 14px;
+    }
+
+    .overlay-dudas .contenedor-dudas{
+        max-width: 90%;
+    }
+
+    .footer .contenedor-footer{
+        padding: 30px 10px;
+    }
+
+    .cart i{
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    .footer #btn-dudas{
+        font-size: 40px;
+        opacity: 70%;
+    }
+
+    .footer #btn-whatsapp{
+        font-size: 40px;
+        opacity: 70%;
+    }
+
+    .footer #footer-dudas.activo{
+        display: none;
+    }
+
+    .footer #footer-whatsapp.activo{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd3fda8bb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Electrónica X</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <nav class="contenedor-nav">
+                <div class="logo" id="logo">
+                    <h1>Electrónica X</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <form action="">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar componentes">
+                </form>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </nav>
+            <div class="categorias" id="categorias">
+                <button class="activo">RESISTENCIAS</button>
+                <button>CAPACITORES</button>
+                <button>DIODOS</button>
+                <button>REGULADORES</button>
+                <button>TRANSISTORES</button>
+                <button>CRISTALES</button>
+                <button>FUSIBLES</button>
+                <button>OTROS</button>
+            </div>
+            <div class="icon" id="open">
+                <span>&#9776;</span>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" data-categoria="resistencias" data-etiquetas="resistencias resistores">
+                <div class="item-contenido">
+                    <img src="img/Resistencia.jpg" alt="">
+                    <div>
+                        <p>Resistencia de película metálica</p>
+                    </div>
+                </div>
+                <div class="especificaciones">
+                    <div class="info">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Tolerancia: 5%</li>
+                        </ul>
+                    </div>
+                    <div class="modificador">
+                        <p>Potencia:</p>
+                        <select id="resistencia">
+                            <option value>Elige una opción</option>
+                            <option value="1/4w">1/4w</option>
+                            <option value="1/2w">1/2w</option>
+                        </select>
+                    </div>
+                    <div class="modificador">
+                        <p>Resistencia:</p>
+                        <select id="resistencia">
+                            <option value>Elige una opción</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="resistencias"
+                data-etiquetas="resistencias resistores potenciometro variable">
+                <div class="item-contenido">
+                    <img src="img/Potenciometro.jpg" alt="">
+                    <div>
+                        <p>Potenciómetro</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="especificaciones">
+                    <div class="info">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Potencia: 1/8w</li>
+                        </ul>
+                    </div>
+                    <div class="modificador">
+                        <p>Resistencia:</p>
+                        <select id="resistencia">
+                            <option value>Elige una opción</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="resistencias"
+                data-etiquetas="resistencias resistores variable luz dependiente fotoresistencia"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Fotoresistencia.jpg" alt="">
+                    <div>
+                        <p>Fotoresistencia</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="especificaciones">
+                    <div class="info">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Tolerancia: 5%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="resistencias"
+                data-etiquetas="resistencias resistores termistores variable calor temperatura"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Termistor.jpg" alt="">
+                    <div>
+                        <p>Termistor</p>
+                    </div>
+                </div>
+                <div class="especificaciones">
+                    <div class="info">
+                        <p>Especificaciones:</p>
+                        <ul>
+                            <li>Tolerancia: 5%</li>
+                        </ul>
+                    </div>
+                    <div class="modificador">
+                        <p>Resistencia:</p>
+                        <select id="resistencia">
+                            <option value>Elige una opción</option>
+                            <option value="10kΩ">10kΩ</option>
+                            <option value="20kΩ">20kΩ</option>
+                            <option value="30kΩ">30kΩ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="capacitores"
+                data-etiquetas="capacitores capacitancia electrolitico uf nf pf" data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Capacitor electrolitico.jpg" alt="">
+                    <div>
+                        <p>Capacitor electrolítico</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="capacitores"
+                data-etiquetas="capacitores capacitancia ceramica ceramico uf nf pf"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Capacitor ceramico.jpg" alt="">
+                    <div>
+                        <p>Capacitor cerámico</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="capacitores"
+                data-etiquetas="capacitores capacitancia ceramico ceramica alto voltaje uf nf pf kv"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Capacitor ceramico de alto voltaje.jpg" alt="">
+                    <div>
+                        <p>Capacitor cerámico de alto voltaje</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="diodos" data-etiquetas="diodos 1n4001 1n4004 1n4007 rectificadores"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Diodo rectificador.jpg" alt="">
+                    <div>
+                        <p>Diodo rectificador</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="diodos" data-etiquetas="diodos schottky sr3100 sr5100 1n5819"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Diodo Schottky.jpg" alt="">
+                    <div>
+                        <p>Diodo Schottky</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="diodos" data-etiquetas="diodos zener 3.3 4.7 6.8 8.2"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Diodo Zener.jpg" alt="">
+                    <div>
+                        <p>Diodo Zener</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="diodos"
+                data-etiquetas="led foquito foco 5mm amarillo azul blanco rojo ultravioleta uv verde infrarojo luz emisor"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/LED.jpg" alt="">
+                    <div>
+                        <p>LED ultrabrillante 5mm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="diodos" data-etiquetas="diodos 1n4148 r307 fr107 her30 sf36 sf56"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Otros diodos.jpg" alt="">
+                    <div>
+                        <p>Otros diodos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="reguladores"
+                data-etiquetas="reguladores voltaje lm7805 lm7809 lm7812 lm7824" data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/LM78XX.jpg" alt="">
+                    <div>
+                        <p>Regulador de voltaje LM78XX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="reguladores" data-etiquetas="reguladores voltaje lm7905 lm7912"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/LM79XX.jpg" alt="">
+                    <div>
+                        <p>Regulador de voltaje LM79XX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="reguladores" data-etiquetas="reguladores voltaje lm317 lm337"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/LM3XX.jpg" alt="">
+                    <div>
+                        <p>Regulador de voltaje LM3XX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="reguladores" data-etiquetas="reguladores voltaje lm2596 "
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/LM2596.jpg" alt="">
+                    <div>
+                        <p>Regulador de voltaje LM2596</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores"
+                data-etiquetas="transistores tip120 tip 125 tip31c tip32c tip41c" data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/TIPXXX.jpg" alt="">
+                    <div>
+                        <p>Transistor TIPXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores 2n2222 bjt 2n3906"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/2NXXXX.jpg" alt="">
+                    <div>
+                        <p>Transistor 2NXXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores bjt bc547 bc556b bc559b"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/BCXXX.jpg" alt="">
+                    <div>
+                        <p>Transistor BCXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores moc3021 moc3041 moc3061"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/MOCXXXX.jpg" alt="">
+                    <div>
+                        <p>Transistor MOCXXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores 4n35 4n25"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/4NXX.jpg" alt="">
+                    <div>
+                        <p>Transistor 4NXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores irf740 irf9z34 irf4905"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/IRFXXX.jpg" alt="">
+                    <div>
+                        <p>Transistor IRFXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="transistores" data-etiquetas="transistores triac bta41 bta24 bta16 bta12"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/BTAXX.jpg" alt="">
+                    <div>
+                        <p>Transistor BTAXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="cristales"
+                data-etiquetas="cristales cuarzo osciladores mhz 4 6 8 10 12 16 20"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Cristal.jpg" alt="">
+                    <div>
+                        <p>Cristal de cuarzo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="fusibles" data-etiquetas="fusibles tipo americano "
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Fusible americano.jpg" alt="">
+                    <div>
+                        <p>Fusible tipo americano</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="fusibles" data-etiquetas="fusibles tipo europeo"
+                data-descripcion="ulEspecificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Fusible europeo.jpg" alt="">
+                    <div>
+                        <p>Fusible tipo europeo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="otros" data-etiquetas="protoboard board placa material pines 830 pruebas"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Resistencia.jpg" alt="">
+                    <div>
+                        <p>Protoboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-categoria="otros"
+                data-etiquetas="cables dupont jumpers conexiones hembra macho 10cm 20cm 40 pines"
+                data-descripcion="Especificaciones:">
+                <div class="item-contenido">
+                    <img src="img/Resistencia.jpg" alt="">
+                    <div>
+                        <p>Cables Dupont (Jumpers)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="contenedor-footer">
+                <div class="footer-dudas">
+                    <h3 id="footer-dudas">¿Tienes dudas?</h3>
+                    <i id="btn-dudas"class="fas fa-question-circle"></i>
+                </div>
+                <div class="footer-whatsapp">
+                    <h3 id="footer-whatsapp">¿No encuentras algo? Mándanos un whats (:</h3>
+                    <i id="btn-whatsapp"class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <div>
+                    <img src="" alt="">
+                    <button id="btn-cerrar"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="caracteristicas">
+
+                    <div class="img-nombre"></div>
+
+                    <div class="modificador">
+                        <p>Cantidad:</p>
+                        <input type="number" step="1" min="1" max="200" name="quantity" value="1">
+                    </div>
+                    <div class="agregar">
+                        <button id="btn-agregar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay-dudas" id="overlay-dudas">
+            <div class="contenedor-dudas">
+                <div>
+                    <button id="btn-cerrar-dudas"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="dudas">
+                    <h3>Métodos de envío</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe deserunt repellat atque
+                    inventore neque illo asperiores nam repellendus qui! Cum dolor dolores nesciunt soluta?</p>
+                </div>
+                <div class="dudas">
+                    <h3>Formas de pago</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas optio voluptate,
+                    perspiciatis ipsam voluptatum quis obcaecati, reprehenderit esse iusto ex praesentium, aperiam vel
+                    dolor?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
