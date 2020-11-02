@@ -8,6 +8,11 @@ window.addEventListener('load', () =>{
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('imagenes-cargadas');
     
+    //refrescar 
+    const footer = document.getElementById('footer');
+    window.addEventListener('orientationchange', ()=>{
+        footer.refreshItems().layout();
+    });
     //Mostar categoria "Resistencias" al iniciar
     grid.filter('[data-categoria="resistencias"]');
 
@@ -73,8 +78,8 @@ window.addEventListener('load', () =>{
             evento.target.id === 'overlay-dudas' ? overlayDudas.classList.remove('activo') : '';
         });
     
-
-        if(!navigator.userAgent.match(/Android/i)){
+        //footer mensaje
+        if(!navigator.userAgent.match((/Android/i)||(/iPod/i)||(/iPad/i))){
             const dudasText = document.getElementById('footer-dudas');
             document.querySelector('#btn-dudas').addEventListener('mouseover', ()=>{
                 dudasText.classList.add('activo');
@@ -91,6 +96,5 @@ window.addEventListener('load', () =>{
                 whatsText.classList.remove('activo');
             });
         }
-        //footer mensaje
 
 });

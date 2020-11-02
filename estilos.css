@@ -93,7 +93,6 @@ header .categorias button:hover{
 header .categorias button.activo   {
     color: #ffffff;
     background: #f05454;
-    border: 3px solid #d8e2ef;
     font-weight: 500;
 }
 
