@@ -73,20 +73,24 @@ window.addEventListener('load', () =>{
             evento.target.id === 'overlay-dudas' ? overlayDudas.classList.remove('activo') : '';
         });
     
-        //footer mensaje
-        const dudasText = document.getElementById('footer-dudas');
-        document.querySelector('#btn-dudas').addEventListener('mouseover', ()=>{
-            dudasText.classList.add('activo');
-        });
-        document.querySelector('#btn-dudas').addEventListener('mouseout', ()=>{
-            dudasText.classList.remove('activo');
-        });
 
-        const whatsText = document.getElementById('footer-whatsapp');
-        document.querySelector('#btn-whatsapp').addEventListener('mouseover', ()=> {
-            whatsText.classList.add('activo');
-        });
-        document.querySelector('#btn-whatsapp').addEventListener('mouseout', ()=>{
-            whatsText.classList.remove('activo');
-        });
+        if(!navigator.userAgent.match(/Android/i)){
+            const dudasText = document.getElementById('footer-dudas');
+            document.querySelector('#btn-dudas').addEventListener('mouseover', ()=>{
+                dudasText.classList.add('activo');
+            });
+            document.querySelector('#btn-dudas').addEventListener('mouseout', ()=>{
+                dudasText.classList.remove('activo');
+            });
+    
+            const whatsText = document.getElementById('footer-whatsapp');
+            document.querySelector('#btn-whatsapp').addEventListener('mouseover', ()=> {
+                whatsText.classList.add('activo');
+            });
+            document.querySelector('#btn-whatsapp').addEventListener('mouseout', ()=>{
+                whatsText.classList.remove('activo');
+            });
+        }
+        //footer mensaje
+
 });

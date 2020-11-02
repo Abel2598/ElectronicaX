@@ -453,13 +453,6 @@ text-align: justify;
         opacity: 70%;
     }
 
-    .footer #footer-dudas.activo{
-        display: none;
-    }
-
-    .footer #footer-whatsapp.activo{
-        display: none;
-    }
 }
 
 
