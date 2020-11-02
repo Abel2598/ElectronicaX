@@ -82,13 +82,12 @@ header .categorias button{
     outline: none;
     border-radius: 5PX;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 header .categorias button:hover{
     background: #f05454;
     color: #fff;
-    outline-style: none;
-    border: 3px solid #d8e2ef;
 }
 
 header .categorias button.activo   {
@@ -453,6 +452,13 @@ text-align: justify;
         opacity: 70%;
     }
 
+    .footer #footer-dudas.activo{
+        display: none;
+    }
+
+    .footer #footer-whatsapp.activo{
+        display: none;
+    }
 }
 
 
