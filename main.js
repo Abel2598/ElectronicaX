@@ -11,7 +11,7 @@ window.addEventListener('load', () =>{
     //refrescar 
     const footer = document.getElementById('footer');
     window.addEventListener('orientationchange', ()=>{
-        footer.refreshItems().layout();
+        window.location.reload(); 
     });
     //Mostar categoria "Resistencias" al iniciar
     grid.filter('[data-categoria="resistencias"]');
