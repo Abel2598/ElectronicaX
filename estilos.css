@@ -279,6 +279,7 @@ header .categorias button.activo   {
     background: #fff;
     border-radius: 5px;
     align-items: center;
+    width: 90%;
     max-width: 900px;
 }
 
@@ -327,6 +328,7 @@ text-align: justify;
     background: #fff;
     border-radius: 5px;
     align-items: center;
+    width: 90%;
     max-width: 900px;
 }
 
@@ -512,14 +514,6 @@ text-align: justify;
 
     .overlay #btn-agregar{
         font-size: 14px;
-    }
-
-    .overlay-dudas .contenedor-dudas{
-        max-width: 90%;
-    }
-
-    .overlay-whatsapp .contenedor-dudas{
-        max-width: 90%;
     }
 
     .footer .contenedor-footer{
