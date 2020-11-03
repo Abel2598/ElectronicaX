@@ -210,7 +210,7 @@ header .categorias button.activo   {
 
 
 .overlay .modificador{
-    padding: 5px 15px;
+    padding: 5px 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -251,11 +251,11 @@ header .categorias button.activo   {
 
 .img-nombre .especificaciones .info{
     margin-bottom: 15px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .img-nombre .especificaciones ul{    
-    padding: 1px 20px;
+    padding: 0 20px;
 }
 
 .img-nombre img{
