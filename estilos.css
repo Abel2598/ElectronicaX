@@ -448,12 +448,11 @@ text-align: justify;
     margin-left: 10px;
 }
 
-.footer h3{
+.footer p{
     background: #fff;
     padding: 5px 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #d8e2ef;
-    opacity: 70%;
 }
 
 /*RESPONSIVO*/

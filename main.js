@@ -95,7 +95,7 @@ window.addEventListener('load', () => {
     });
 
     //footer mensaje
-    if (!navigator.userAgent.match((/Android/i) || (/iPod/i) || (/iPad/i) || (/Blackberry/i))) {
+    if (!navigator.userAgent.match((/Android/i) || (/iPod/i) || (/iPhone/i) || (/iPad/i) || (/Blackberry/i))) {
         const dudasText = document.getElementById('footer-dudas');
         document.querySelector('#btn-dudas').addEventListener('mouseover', () => {
             dudasText.classList.add('activo');
