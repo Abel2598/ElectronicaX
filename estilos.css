@@ -9,6 +9,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+textarea, input, button, select, form{
+    font-family: inherit;
+}
+
 a {
   text-decoration: none;  
 }
@@ -280,7 +284,6 @@ header .categorias button.activo   {
     max-width: 70%;
 }
 
-
 .contenedor-dudas{
     position: relative;
 }
@@ -305,6 +308,86 @@ header .categorias button.activo   {
 .overlay-dudas .dudas{
 padding: 15px 20px;
 text-align: justify;
+}
+
+/*OVERLAY WHATSAPP*/
+.overlay-whatsapp{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-whatsapp .contenedor-dudas {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 70%;
+}
+
+.overlay-whatsapp.activo{
+    display: flex;
+}
+
+.overlay-whatsapp #btn-cerrar-whats{
+    background: none;
+    font-size: 25px;
+    color: #f05454;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 5px ;
+}
+
+.overlay-whatsapp .dudas{
+    padding: 15px 20px;
+    text-align: justify;
+    }
+
+.overlay-whatsapp .enviar-whats{
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.overlay-whatsapp .enviar-whats textarea{
+    width: 90%;
+    min-height: 100px;
+    outline: none;
+    padding: 10px 10px;
+    resize: none;
+    border: 1px solid #d8e2ef;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.overlay-whatsapp .enviar{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.overlay-whatsapp #btn-enviar{
+    padding: 10px;
+    color: #ffff;
+    background: #f05454;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 90%;
 }
 
 /*FOOTER*/
@@ -349,7 +432,6 @@ text-align: justify;
     display: flex;
     padding: 10px 0;
     align-items: center;
-    
 }
 
 .footer #btn-dudas{
@@ -364,6 +446,14 @@ text-align: justify;
     font-size: 50px;
     color: #25d366;
     margin-left: 10px;
+}
+
+.footer h3{
+    background: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #d8e2ef;
+    opacity: 70%;
 }
 
 /*RESPONSIVO*/
