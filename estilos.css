@@ -167,6 +167,8 @@ header .categorias button.activo   {
       background: #fff;
       border-radius: 5px;
       align-items: center;
+      width: 90%;
+      max-width: 450px;
   }
 
   .overlay.activo{
@@ -193,6 +195,10 @@ header .categorias button.activo   {
 
 .contenedor-img{
     position: relative;
+}
+
+.overlay .especificaciones p{
+    text-align: justify;
 }
 
 .overlay #btn-cerrar{
@@ -492,10 +498,6 @@ text-align: justify;
 
     .grid .item p{
         font-size: 12px;
-    }
-
-    .overlay .contenedor-img{
-        max-width: 70%;
     }
 
     .overlay .img-nombre{
