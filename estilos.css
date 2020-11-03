@@ -205,34 +205,36 @@ header .categorias button.activo   {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 3px 5px ;
+    padding: 0 5px ;
 }
 
+
 .overlay .modificador{
-    padding: 5px 0;
-    justify-content: space-between;
+    padding: 5px 15px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .overlay .modificador p{
-    width: 45%;
-    text-align: center;
+    width: 50%;
+    text-align: left;
 }
 .overlay select{
-    width: 55%;
+    width: 50%;
     outline: none;
     box-sizing: border-box;
 }
 
 .overlay input{
-    width: 55%;
+    width: 50%;
     outline: none;
     text-align: center;
 }
 
 .overlay .caracteristicas{
     padding: 10px 20px;
-    
 }
 
 .img-nombre{
@@ -248,12 +250,12 @@ header .categorias button.activo   {
 }
 
 .img-nombre .especificaciones .info{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 0 10px;
 }
 
 .img-nombre .especificaciones ul{    
-    padding: 1px 50px;
+    padding: 1px 20px;
 }
 
 .img-nombre img{
@@ -301,11 +303,11 @@ header .categorias button.activo   {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 3px 5px ;
+    padding: 0 5px ;
 }
 
 .overlay-dudas .dudas{
-padding: 15px 20px;
+padding: 10px 20px;
 text-align: justify;
 }
 
@@ -346,11 +348,11 @@ text-align: justify;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 3px 5px ;
+    padding: 0 5px ;
 }
 
 .overlay-whatsapp .dudas{
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-align: justify;
     }
 
