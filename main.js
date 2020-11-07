@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
         grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda));
     });
 
+    //OVERLAY PRODUCTOS
     //Listener imagenes
     const overlay = document.getElementById('overlay');
     document.querySelectorAll('.grid .item img').forEach((elemento) => {
@@ -62,6 +63,7 @@ window.addEventListener('load', () => {
         evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
     });
 
+    //OVERLAY DUDAS
     //Listener imagen dudas
     const overlayDudas = document.getElementById('overlay-dudas');
     document.querySelector('#btn-dudas').addEventListener('click', () => {
@@ -78,6 +80,7 @@ window.addEventListener('load', () => {
         evento.target.id === 'overlay-dudas' ? overlayDudas.classList.remove('activo') : '';
     });
 
+    //OVERLAY WHATSAPP
     //Listener imagen whatsapp
     const overlayWhatsapp = document.getElementById('overlay-whatsapp');
     document.querySelector('#btn-whatsapp').addEventListener('click', () => {
@@ -92,6 +95,23 @@ window.addEventListener('load', () => {
     //Listener overlay whatsapp
     overlayWhatsapp.addEventListener('click', (evento) => {
         evento.target.id === 'overlay-whatsapp' ? overlayWhatsapp.classList.remove('activo') : '';
+    });
+
+    //OVERLAY CARRITO
+    //Listener imagen carrito
+    const overlayCarrito = document.getElementById('overlay-carrito');
+    document.querySelector('#cart').addEventListener('click', () => {
+        overlayCarrito.classList.add('activo');
+    });
+
+    //Listener boton cerrar carrito
+    document.querySelector('#btn-cerrar-carrito').addEventListener('click', () => {
+        overlayCarrito.classList.remove('activo');
+    });
+
+    //Listener overlay carrito
+    overlayCarrito.addEventListener('click', (evento) => {
+        evento.target.id === 'overlay-carrito' ? overlayCarrito.classList.remove('activo') : '';
     });
 
     //footer mensaje

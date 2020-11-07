@@ -64,6 +64,10 @@ header .barra-busqueda{
     padding: 5px 0;
 }
 
+.cart i:hover{
+    cursor: pointer;
+}
+
 .contenedor-nav{
     display: flex;
     justify-content: space-between;
@@ -385,6 +389,92 @@ text-align: justify;
     justify-content: center;
 }
 .overlay-whatsapp #btn-enviar{
+    padding: 10px;
+    color: #ffff;
+    background: #f05454;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 90%;
+}
+
+/*OVERLAY CARRITO*/
+.overlay-carrito{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-carrito .contenedor-dudas {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+}
+
+.overlay-carrito.activo{
+    display: flex;
+}
+
+.overlay-carrito #btn-cerrar-carrito{
+    background: none;
+    font-size: 25px;
+    color: #f05454;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px ;
+}
+
+.overlay-carrito .productos-carrito{
+    padding: 5px 20px;
+    text-align: justify;
+    display: block;
+}
+
+.overlay-carrito .tabla-carrito{
+    padding: 10px 0;
+}
+
+.overlay-carrito .celda-max{
+    width: 70%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid #000000;
+}
+
+td{
+    font-size: 12px;
+}
+
+.overlay-carrito .finalizar{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.overlay-carrito #btn-finalizar{
     padding: 10px;
     color: #ffff;
     background: #f05454;

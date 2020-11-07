@@ -24,7 +24,7 @@
                     <input type="text" autocomplete="off" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar componentes">
                 </form>
                 <div class="cart">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i id="cart" class="fas fa-shopping-cart"></i>
                 </div>
             </nav>
             <div class="categorias" id="categorias">
@@ -521,6 +521,36 @@
                 </div>
                 <div class="enviar">
                     <button id="btn-enviar">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay-carrito" id="overlay-carrito">
+            <div class="contenedor-dudas">
+                <div>
+                    <button id="btn-cerrar-carrito"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="productos-carrito">
+                    <h3>Carrito</h3>
+                    <div class="tabla-carrito">
+                        <table>
+                            <tr class="carrito-specs">
+                                <th class="celda-max">Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr>
+                                <td>Resistencia de pelicula metálica 1/2w 10kΩ</td>
+                                <td>Celda2</td>
+                                <td>Celda3</td>
+                                <td>Celda4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="finalizar">
+                    <button id="btn-finalizar">Finalizar pedido</button>
                 </div>
             </div>
         </section>
